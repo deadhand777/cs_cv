@@ -4,7 +4,7 @@ surname: Schulz
 fontawesome: yes
 position: "Team Lead | Product Manager | Data Scientist"
 address: "Berlin GERMANY"
-profilepic: photo.jpeg
+profilepic: "../man/photo.jpeg"
 email: "chris.schulz13@yahoo.de"
 github: deadhand777
 linkedin: chris-schulz-14b9419a
