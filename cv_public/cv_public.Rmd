@@ -1,0 +1,65 @@
+---
+name: Chris
+surname: Schulz
+fontawesome: yes
+position: "Team Lead | Product Manager | Data Scientist"
+address: "Berlin GERMANY"
+email: "chris.schulz13@yahoo.de"
+github: deadhand777
+linkedin: chris-schulz-14b9419a
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "A highly organised and result-driven and passionate data professional, who combines best experience from global financial organisations, consulting firms and FinTech, with a proven track record of successful development, implementation and delivery of organisational change."
+output: 
+  vitae::awesomecv:
+    page_total: true
+---       
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(dplyr)
+library(tidyr)
+library(glue)
+library(arrow)
+library(here)
+```
+
+# Experience
+
+```{r experience}
+arrow::read_parquet(file = here::here('data', 'experience.parquet')) %>% 
+  tidyr::unnest(details) %>% 
+  tidyr::unnest_longer(details) %>% 
+  vitae::detailed_entries(what = role, when = date, with = company, where = loc, why = details)
+```
+
+# Education
+
+```{r educaton}
+arrow::read_parquet(file = here::here('data', 'education.parquet')) %>% 
+  tidyr::unnest(details) %>% 
+  tidyr::unnest_longer(details) %>% 
+  vitae::detailed_entries(what = degree, when = date, with = university, where = loc, why = details)
+
+```
+
+# Selected Skills
+
+```{r skills_prep}
+df_skills <- arrow::read_parquet(file = here::here('data', 'skills.parquet')) %>% 
+  dplyr::mutate(skill = if_else(is.na(details)|details=="", glue("{skill}"), glue("{skill} ({details})"))) %>% 
+  dplyr::group_by(group) %>% 
+  dplyr::summarize(skills = glue_collapse(skill, sep = " $\\bullet$ "))
+```
+
+```{r skills, results='asis', width = 40000}
+for (group in df_skills$group) {
+  cat(
+    glue::glue("\\textbf{<<tools::toTitleCase(group)>>}:", .open = "<<", .close = ">>"),
+    dplyr::filter(df_skills, group == !!group)$skills,
+    "\n\n\n"
+  )
+}
+```
+
