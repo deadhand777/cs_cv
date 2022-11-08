@@ -2,7 +2,7 @@
 name: Chris
 surname: Schulz
 fontawesome: yes
-position: "Team Lead | Product Manager | Data Scientist"
+position: "Team Lead | Product Manager | Data Scientist | Data Analyst"
 address: "Berlin GERMANY"
 profilepic: "../man/photo.jpeg"
 email: "chris.schulz13@yahoo.de"
