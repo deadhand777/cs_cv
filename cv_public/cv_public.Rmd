@@ -9,7 +9,7 @@ email: "chris.schulz13@yahoo.de"
 github: deadhand777
 linkedin: chris-schulz-14b9419a
 date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "A highly organised and result-driven and passionate data professional, who combines best experience from global financial organisations, consulting firms and FinTech, with a proven track record of successful development, implementation and delivery of organisational change."
+aboutme: "A highly organised and result-driven and passionate data professional, who combines best experience from global financial organisations, consulting firms and FinTech, with a proven track record of successful development, implementation and delivery of data-driven initiatives."
 output: 
   vitae::awesomecv:
     keep_tex: false
