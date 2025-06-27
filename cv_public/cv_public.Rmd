@@ -7,9 +7,9 @@ address: "Berlin GERMANY"
 profilepic: "../man/photo.jpeg"
 email: "chris.schulz13@yahoo.de"
 github: deadhand777
-linkedin: chris-schulz-14b9419a
+linkedin: chris-schulz-ai-first
 date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "A highly organised and result-driven and passionate data professional, who combines best experience from global financial organisations, consulting firms and FinTech, with a proven track record of successful development, implementation and delivery of data-driven initiatives."
+aboutme: "As a highly organized and results-driven Head of Data & AI based in Berlin, I leverage my expertise in data management, machine learning, and AI strategy to drive significant improvements in decision-making within global financial organizations, consulting firms, and the FinTech industry. With a proven track record of implementing scalable data systems and driving data-driven initiatives, I am committed to enhancing operational efficiency and delivering business value through innovative data and AI solutions."
 output: 
   vitae::awesomecv:
     keep_tex: false
