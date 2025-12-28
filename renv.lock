@@ -363,11 +363,10 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.15.1",
-      "Source": "Repository",
+      "Version": "1.1.5",
+      "OS_type": null,
       "Repository": "CRAN",
-      "Hash": "c38694b67e7f7091f7d073b3766258cc",
-      "Requirements": []
+      "Source": "Repository"
     },
     "rlang": {
       "Package": "rlang",

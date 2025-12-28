@@ -2,18 +2,18 @@
 name: Chris
 surname: Schulz
 fontawesome: yes
-position: "Team Lead | Product Manager | AI Engineer | Scientist | Data Analyst"
+position: "Team Lead | Product Manager | AI Engineer | AI Officer | Data Scientist | Data Strategist"
 address: "Berlin GERMANY"
 profilepic: "../man/photo.jpeg"
 email: "chris.schulz13@yahoo.de"
 github: deadhand777
 linkedin: chris-schulz-ai-first
 date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "As a highly organized and results-driven Head of Data & AI based in Berlin, I leverage my expertise in data management, machine learning, and AI strategy to drive significant improvements in decision-making within global financial organizations, consulting firms, and the FinTech industry. With a proven track record of implementing scalable data systems and driving data-driven initiatives, I am committed to enhancing operational efficiency and delivering business value through innovative data and AI solutions."
-output: 
+aboutme: "As an experienced AI Engineer and Head of Data & AI, I specialize in developing and deploying cutting-edge Large Language Model (LLM) solutions and scalable data architectures. My expertise spans the entire AI lifecycle, from strategy and data management to the implementation of Intelligent Document Processing (IDP) systems and agentic workflows. I am seeking a new challenge where I can leverage my passion for generative AI, Python, and cloud computing to create scalable and transformative products that drive innovation forward."
+output:
   vitae::awesomecv:
     keep_tex: false
----       
+---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -30,18 +30,18 @@ library(here)
 # Experience
 
 ```{r experience}
-arrow::read_parquet(file = here::here('data', 'experience.parquet')) %>% 
-  tidyr::unnest(details) %>% 
-  tidyr::unnest_longer(details) %>% 
+arrow::read_parquet(file = here::here('data', 'experience.parquet')) |>
+  tidyr::unnest(details) |>
+  tidyr::unnest_longer(details) |>
   vitae::detailed_entries(what = role, when = date, with = company, where = loc, why = details)
 ```
 
 # Education
 
 ```{r educaton}
-arrow::read_parquet(file = here::here('data', 'education.parquet')) %>% 
-  tidyr::unnest(details) %>% 
-  tidyr::unnest_longer(details) %>% 
+arrow::read_parquet(file = here::here('data', 'education.parquet')) |>
+  tidyr::unnest(details) |>
+  tidyr::unnest_longer(details) |>
   vitae::detailed_entries(what = degree, when = date, with = university, where = loc, why = details)
 
 ```
@@ -49,19 +49,19 @@ arrow::read_parquet(file = here::here('data', 'education.parquet')) %>%
 # Selected Skills
 
 ```{r skills_prep}
-df_skills <- arrow::read_parquet(file = here::here('data', 'skills.parquet')) %>% 
-  dplyr::mutate(skill = if_else(is.na(details)|details=="", glue("{skill}"), glue("{skill} ({details})"))) %>% 
-  dplyr::group_by(group) %>% 
+df_skills <- arrow::read_parquet(file = here::here('data', 'skills.parquet')) |>
+  dplyr::mutate(skill = if_else(is.na(details) | details == "", glue("{skill}"), glue("{skill} ({details})"))) |>
+  dplyr::group_by(group) |>
   dplyr::summarize(skills = glue_collapse(skill, sep = " $\\bullet$ "))
 ```
 
 ```{r skills, results='asis', width = 40000}
 for (group in df_skills$group) {
+  group_escaped <- gsub("&", "\\\\&", tools::toTitleCase(group))
   cat(
-    glue::glue("\\textbf{<<tools::toTitleCase(group)>>}:", .open = "<<", .close = ">>"),
+    glue::glue("\\textbf{<<group_escaped>>}:", .open = "<<", .close = ">>"),
     dplyr::filter(df_skills, group == !!group)$skills,
     "\n\n\n"
   )
 }
 ```
-
