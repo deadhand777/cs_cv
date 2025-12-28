@@ -13,6 +13,7 @@ aboutme: "As an experienced AI Engineer and Head of Data & AI, I specialize in d
 output:
   vitae::awesomecv:
     keep_tex: false
+    highlight: null
 ---
 
 ```{r setup, include=FALSE}
