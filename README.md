@@ -1,12 +1,10 @@
 # CV - Chris Schulz
 
-**Head of Data & AI | GenAI & LLM Platform Builder | Engineering Leader**
+**"Team Lead | Product Manager | AI Engineer | AI Officer | Data Scientist | Data Strategist"**
 
-```
 [![](./man/cv_preview.png)](https://github.com/deadhand777/cs_cv/blob/main/cv/cv.pdf)
 
 My current public CV can be found & downloaded [here](https://github.com/deadhand777/cs_cv/blob/main/cv/cv.pdf).
-```
 
 ## Specializations
 
