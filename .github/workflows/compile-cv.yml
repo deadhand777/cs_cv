@@ -1,0 +1,38 @@
+name: Compile CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install fonts
+        run: |
+          mkdir -p ~/.local/share/fonts
+          curl -sL "https://github.com/adobe-fonts/source-sans/releases/download/3.052R/OTF-source-sans-3.052R.zip" -o /tmp/ss3.zip
+          unzip -q /tmp/ss3.zip -d /tmp/ss3
+          cp /tmp/ss3/OTF/SourceSans3-*.otf ~/.local/share/fonts/
+          curl -sL "https://github.com/googlefonts/roboto/releases/download/v2.138/roboto-unhinted.zip" -o /tmp/roboto.zip
+          unzip -q /tmp/roboto.zip -d /tmp/roboto
+          cp /tmp/roboto/Roboto-*.ttf ~/.local/share/fonts/
+          fc-cache -f
+
+      - uses: typst-community/setup-typst@v3
+        with:
+          typst-version: ^0.14.0
+
+      - name: Compile CV
+        run: cd cv && typst compile cv.typ
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: recompile cv.pdf"
+          file_pattern: cv/cv.pdf

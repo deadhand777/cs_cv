@@ -1,14 +1,30 @@
 # CV - Chris Schulz
 
-**AI Engineer | LLM Expert | Head of Data & AI | Product Manager**
+**Head of Data & AI | GenAI & LLM Platform Builder | Engineering Leader**
 
-[![](./man/cv_preview.png)](https://github.com/deadhand777/cs_cv/blob/main/cv_public/cv_public.pdf)
+## Generate the CV
 
-My current public CV can be found & downloaded [here](https://github.com/deadhand777/cs_cv/blob/main/cv_public/cv_public.pdf).
+The CV is built with [brilliant-CV](https://github.com/yunanwg/brilliant-CV) (Typst). All content lives in `cv/profile_en/`.
 
-Specializing in:
-- **Generative AI & LLMs**: RAG, Agents, Fine-tuning, Prompt Engineering
-- **Machine Learning**: Python, PyTorch, TensorFlow, Scikit-learn
-- **Data Strategy**: Building scalable data architectures and AI roadmaps
+```bash
+cd cv && typst compile cv.typ
+```
 
-Further details are available upon request.
+Output: `cv/cv.pdf` (A4, 2 pages).
+
+## Project Structure
+
+```
+cv/                        # Typst CV pipeline (active)
+  cv.typ                   # entry point
+  profile_en/              # content: professional.typ, skills.typ, education.typ, metadata.toml
+  cv.pdf                   # compiled output
+man/                       # assets (profile photo, preview image)
+Chris_Schulz_CV.yaml       # RenderCV YAML (secondary pipeline)
+```
+
+## Specializations
+
+- **Generative AI & LLMs**: RAG, Agents, MCP, Fine-tuning (LoRA/RLHF), LangChain, Strands Agents
+- **ML & Data Engineering**: PyTorch, Python, AWS, Apache Iceberg, DuckDB, MLOps
+- **Leadership**: AI roadmap, team building, EU AI Act compliance, data governance

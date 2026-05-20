@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; case \"$f\" in *Chris_Schulz_CV.yaml) cd /Users/c.schulz/programming/cs_cv && uv run rendercv render Chris_Schulz_CV.yaml ;; esac; } 2>/dev/null || true",
+            "timeout": 60,
+            "statusMessage": "Rendering CV..."
+          }
+        ]
+      }
+    ]
+  }
+}

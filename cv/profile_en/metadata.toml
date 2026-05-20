@@ -1,0 +1,59 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+header_quote = "Head of Data & AI with 10+ years taking AI from experiment to production in regulated FinTech and financial services. Track record of measurable commercial outcomes — 25% reduction in after-contact work, 40% development productivity uplift — alongside governance frameworks built for EU AI Act enforcement. Architects both the technology and the teams."
+
+cv_footer = "Curriculum vitae"
+letter_footer = "Cover letter"
+
+[layout]
+    awesome_color = "darknight"
+    before_section_skip = "0pt"
+    before_entry_skip = "0pt"
+    before_entry_description_skip = "0pt"
+    paper_size = "a4"
+    date_width = "3.6cm"
+
+    [layout.fonts]
+        regular_fonts = ["Source Sans 3"]
+        header_font = "Roboto"
+
+    [layout.header]
+        header_align = "left"
+        display_profile_photo = true
+        profile_photo_radius = "50%"
+        info_font_size = "10pt"
+
+    [layout.entry]
+        display_entry_society_first = true
+        display_logo = false
+
+    [layout.section]
+        title_highlight = "first-letters"
+        title_highlight_letters = 3
+
+    [layout.footer]
+        display_page_counter = true
+        display_footer = true
+
+[inject]
+    injected_keywords_list = [
+        "AI Engineer", "Head of AI", "GenAI", "LLM", "Machine Learning",
+        "Python", "AWS", "Amazon Bedrock", "Strands Agents", "MCP",
+        "RAG", "Agents", "Data Engineering", "Platform Engineering",
+        "Engineering Leadership", "Deep Learning", "PyTorch", "TensorFlow",
+        "Docker", "CI/CD", "DuckDB", "PostgreSQL",
+        "EU AI Act", "GDPR", "MLOps", "Apache Iceberg", "XAI",
+        "Model Governance", "Explainability", "Fine-tuning"
+    ]
+
+[personal]
+    first_name = "Chris"
+    last_name = "Schulz"
+
+    [personal.info]
+        extraInfo = "Team Lead | Product Manager | AI Engineer | AI Officer | Data Scientist | Data Strategist"
+        linebreak = ""
+        email = "chris.schulz13@yahoo.de"
+        github = "deadhand777"
+        linkedin = "chris-schulz-ai-first"
+        location = "Potsdam, Germany"
