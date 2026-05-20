@@ -2,9 +2,20 @@
 
 **Head of Data & AI | GenAI & LLM Platform Builder | Engineering Leader**
 
-## Generate the CV
 
-The CV is built with [brilliant-CV](https://github.com/yunanwg/brilliant-CV) (Typst). All content lives in `cv/profile_en/`.
+[![](./man/cv_preview.png)](https://github.com/deadhand777/cs_cv/blob/main/cv/cv.pdf)
+
+My current public CV can be found & downloaded [here](https://github.com/deadhand777/cs_cv/blob/main/cv/cv.pdf).
+```
+
+## Specializations
+
+- **Generative AI & LLMs**: RAG, Agents, MCP, Fine-tuning (LoRA/RLHF), LangChain, Strands Agents
+- **ML & Data Engineering**: PyTorch, Python, AWS, Apache Iceberg, DuckDB, MLOps
+- **Leadership**: AI roadmap, team building, EU AI Act compliance, data governance
+
+
+## Generate the CV
 
 ```bash
 cd cv && typst compile cv.typ
@@ -21,10 +32,3 @@ cv/                        # Typst CV pipeline (active)
   cv.pdf                   # compiled output
 man/                       # assets (profile photo, preview image)
 Chris_Schulz_CV.yaml       # RenderCV YAML (secondary pipeline)
-```
-
-## Specializations
-
-- **Generative AI & LLMs**: RAG, Agents, MCP, Fine-tuning (LoRA/RLHF), LangChain, Strands Agents
-- **ML & Data Engineering**: PyTorch, Python, AWS, Apache Iceberg, DuckDB, MLOps
-- **Leadership**: AI roadmap, team building, EU AI Act compliance, data governance
