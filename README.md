@@ -2,7 +2,7 @@
 
 **Head of Data & AI | GenAI & LLM Platform Builder | Engineering Leader**
 
-
+```
 [![](./man/cv_preview.png)](https://github.com/deadhand777/cs_cv/blob/main/cv/cv.pdf)
 
 My current public CV can be found & downloaded [here](https://github.com/deadhand777/cs_cv/blob/main/cv/cv.pdf).
