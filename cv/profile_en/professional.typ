@@ -22,7 +22,7 @@
     [Established an AI governance framework aligned with EU AI Act — encompassing model documentation, audit trails, explainability pipelines, and continuous bias monitoring for production decisioning systems],
     [Implemented Claude Code across the engineering team, driving a 40% increase in software development productivity],
   ),
-  tags: ("Amazon Bedrock", "AWS", "Claude", "Datalakehouse", "EU AI Act", "GenAI", "LLM", "MCP", "Model Governance", "Python", "Strands Agents"),
+  tags: ("Amazon Bedrock", "AWS", "Claude", "Datalakehouse", "EU AI Act", "GenAI", "LLM", "MCP", "Model Governance", "Python", "Strands Agents", "TypeScript"),
 )
 
 #cv-entry(
@@ -62,7 +62,7 @@
     [Architected and extended a central data lake with a modular service landscape, enabling self-serve analytics across all Europace stakeholder groups],
     [Developed and deployed ML-based anomaly detection and time series forecasting pipelines, automating data validation and enabling forward-looking capacity planning for executive reporting],
   ),
-  tags: ("Anomaly Detection", "AWS", "Datalake", "ML", "Python", "Team Leadership", "Time Series"),
+  tags: ("Anomaly Detection", "AWS", "Datalake", "ML", "Python", "Team Leadership", "Time Series", "TypeScript"),
 )
 
 #cv-entry-continued(
@@ -71,7 +71,7 @@
   description: list(
     [Designed the cloud-based data framework (ingestion → transformation → consumption) for the loans business and built KPI dashboards across teams, establishing the foundation for data-driven decision-making at Europace],
   ),
-  tags: ("AWS", "Datalake", "ETL", "KPI Design", "Product Deployment", "Python"),
+  tags: ("AWS", "Datalake", "ETL", "KPI Design", "ML", "Product Deployment", "Python", "TypeScript"),
 )
 
 #cv-entry-continued(
@@ -80,7 +80,7 @@
   description: list(
     [Advised partner institutions on technology innovation and data capability; led the Europace data-drivenness initiative enabling data-informed decision-making across the lending ecosystem],
   ),
-  tags: ("AWS", "Business Analytics", "Data Analysis", "Python", "R"),
+  tags: ("AWS", "Business Analytics", "Data Analysis", "ML", "Python", "R"),
 )
 
 #cv-entry(
@@ -93,7 +93,7 @@
     [Executed model calibration, market sizing and forecasting of various European markets and asset classes],
     [Conducted research and captured distribution trends in institutional asset management along the institutional investment chain to calibrate client's market penetration strategies],
   ),
-  tags: ("Campaign M", "Financial Markets", "Forecasting", "Institutional Asset Management", "Quantitative Analysis"),
+  tags: ("Campaign Management", "Financial Markets", "Forecasting", "Institutional Asset Management", "Quantitative Analysis"),
 )
 
 #cv-entry(
@@ -106,7 +106,7 @@
     [Developed a portfolio of investment vehicles covering the whole customer spectrum],
     [Created a selection algorithm utilising customer preferences, assessing qualitative and quantitative ETF characteristics to provide tailored investment advice],
   ),
-  tags: ("Asset Allocation", "ETF", "Financial Services", "Investment", "Retail Banking"),
+  tags: ("Asset Allocation", "Deposit Insurance", "ETF", "Financial Services", "Investment", "Project Management", "Retail Banking"),
 )
 
 #cv-entry(
