@@ -21,8 +21,10 @@
     [Engineered a scalable distributed datalakehouse (AWS S3, Glue, Lake Formation, Firehose, DuckDB, Iceberg) with automated quality monitoring and full observability — the foundational data platform supporting analytics, ML training, and product data access across the organization],
     [Established an AI governance framework aligned with EU AI Act — encompassing model documentation, audit trails, explainability pipelines, and continuous bias monitoring for production decisioning systems],
     [Implemented Claude Code across the engineering team, driving a 40% increase in software development productivity],
+    [Developed and implemented an AI-powered chatbot to assist stakeholders with information security and compliance inquiries, leveraging internal knowledge bases and regulatory guidelines to provide accurate, timely guidance],
+    [Developed and deployed an AI-powered data analytics assistant that provides expert-level data insights to business stakeholders, eliminating the data analyst bottleneck and enabling self-service analytics across the organization],
   ),
-  tags: ("Amazon Bedrock", "AWS", "Claude", "Datalakehouse", "EU AI Act", "GenAI", "LLM", "MCP", "Model Governance", "Python", "Strands Agents", "TypeScript"),
+  tags: ("Amazon Bedrock", "AWS", "Claude", "Datalakehouse", "EU AI Act", "GenAI", "LLM", "MCP", "Model Governance", "Python", "Strands Agents", "TypeScript", "AI Chatbot", "Information Security", "Compliance", "Regulatory AI", "NLP", "LLM Applications", "Data Analytics", "Business Intelligence"),
 )
 
 #cv-entry(
@@ -34,7 +36,7 @@
     [Developed a data strategy and roadmap for a client's customer service department, identifying key business requirements and aligning data capabilities to operational goals],
     [Designed a cloud-based end-to-end data management framework covering ingestion, transformation, and consumption layers for scalable data democratization],
   ),
-  tags: ("Cloud Architecture", "Consulting", "Data Strategy", "Python"),
+  tags: ("Cloud Architecture", "Consulting", "Data Strategy", "Python", "Business Intelligence"),
 )
 
 #cv-entry(
@@ -46,7 +48,7 @@
     [Led and mentored a team of data scientists at one of Germany's largest digital retail banks, establishing standardized model development workflows, code review standards, and a regulated-deployment checklist for production ML systems in a banking environment],
     [Developed the data science strategy and product roadmap for DKB's core banking AI initiatives, aligning ML capability with BaFin-regulated risk and compliance constraints],
   ),
-  tags: ("BaFin", "Banking", "Data Science Strategy", "Data Science Workflow", "Python", "R", "Regulated ML", "Team Leadership"),
+  tags: ("BaFin", "Banking", "Data Science Strategy", "Data Science Workflow", "Python", "R", "Regulated ML", "Team Leadership", "Business Intelligence"),
 )
 
 #cv-entry-start(
@@ -62,7 +64,7 @@
     [Architected and extended a central data lake with a modular service landscape, enabling self-serve analytics across all Europace stakeholder groups],
     [Developed and deployed ML-based anomaly detection and time series forecasting pipelines, automating data validation and enabling forward-looking capacity planning for executive reporting],
   ),
-  tags: ("Anomaly Detection", "AWS", "Datalake", "ML", "Python", "Team Leadership", "Time Series", "TypeScript"),
+  tags: ("Anomaly Detection", "AWS", "Datalake", "ML", "Python", "Team Leadership", "Time Series", "TypeScript", "Business Intelligence"),
 )
 
 #cv-entry-continued(
@@ -71,7 +73,7 @@
   description: list(
     [Designed the cloud-based data framework (ingestion → transformation → consumption) for the loans business and built KPI dashboards across teams, establishing the foundation for data-driven decision-making at Europace],
   ),
-  tags: ("AWS", "Datalake", "ETL", "KPI Design", "ML", "Product Deployment", "Python", "TypeScript"),
+  tags: ("AWS", "Datalake", "ETL", "KPI Design", "ML", "Product Deployment", "Python", "TypeScript", "Business Intelligence"),
 )
 
 #cv-entry-continued(
@@ -80,7 +82,7 @@
   description: list(
     [Advised partner institutions on technology innovation and data capability; led the Europace data-drivenness initiative enabling data-informed decision-making across the lending ecosystem],
   ),
-  tags: ("AWS", "Business Analytics", "Data Analysis", "ML", "Python", "R"),
+  tags: ("AWS", "Business Analytics", "Data Analysis", "ML", "Python", "R", "Business Intelligence"),
 )
 
 #cv-entry(
@@ -93,7 +95,7 @@
     [Executed model calibration, market sizing and forecasting of various European markets and asset classes],
     [Conducted research and captured distribution trends in institutional asset management along the institutional investment chain to calibrate client's market penetration strategies],
   ),
-  tags: ("Campaign Management", "Financial Markets", "Forecasting", "Institutional Asset Management", "Quantitative Analysis"),
+  tags: ("Campaign Management", "Financial Markets", "Forecasting", "Institutional Asset Management", "Quantitative Analysis", "Business Intelligence"),
 )
 
 #cv-entry(
@@ -106,7 +108,7 @@
     [Developed a portfolio of investment vehicles covering the whole customer spectrum],
     [Created a selection algorithm utilising customer preferences, assessing qualitative and quantitative ETF characteristics to provide tailored investment advice],
   ),
-  tags: ("Asset Allocation", "Deposit Insurance", "ETF", "Financial Services", "Investment", "Project Management", "Retail Banking"),
+  tags: ("Asset Allocation", "Deposit Insurance", "ETF", "Financial Services", "Investment", "Project Management", "Retail Banking", "Business Intelligence"),
 )
 
 #cv-entry(

@@ -26,6 +26,12 @@ curl -L "https://github.com/googlefonts/roboto/releases/download/v2.138/roboto-u
 unzip -q /tmp/roboto.zip -d /tmp/roboto && cp /tmp/roboto/Roboto-*.ttf ~/Library/Fonts/
 ```
 
+**Editing notes:**
+- Professional experience entries use `cv-entry`, `cv-entry-start`, `cv-entry-continued`
+- Achievements are formatted as list items: `[Achievement description]`
+- Tags are tuples: `tags: ("tag1", "tag2", ...)`
+- Changes to professional.typ must be made in both `cv/` and `cv_private/` directories
+
 ## Generating the CV (Python/RenderCV — secondary pipeline)
 
 ```bash
