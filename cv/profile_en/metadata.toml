@@ -52,8 +52,9 @@ letter_footer = "Cover letter"
 
     [personal.info]
         extraInfo = "Team Lead | Product Manager | AI Engineer | AI Officer | Data Scientist | Data Strategist"
-        linebreak = ""
         email = "chris.schulz13@yahoo.de"
         github = "deadhand777"
         linkedin = "chris-schulz-ai-first"
+        linebreak = ""
+        homepage = "deadhand777.github.io/data-alpha"
         location = "Potsdam, Germany"

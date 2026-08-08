@@ -23,6 +23,9 @@ jobs:
           curl -sL "https://github.com/googlefonts/roboto/releases/download/v2.138/roboto-unhinted.zip" -o /tmp/roboto.zip
           unzip -q /tmp/roboto.zip -d /tmp/roboto
           cp /tmp/roboto/Roboto-*.ttf ~/.local/share/fonts/
+          curl -sL "https://github.com/FortAwesome/Font-Awesome/releases/download/7.3.1/fontawesome-free-7.3.1-desktop.zip" -o /tmp/fontawesome.zip
+          unzip -q /tmp/fontawesome.zip -d /tmp/fontawesome
+          cp /tmp/fontawesome/fontawesome-free-7.3.1-desktop/otfs/*.otf ~/.local/share/fonts/
           fc-cache -f
 
       - uses: typst-community/setup-typst@v3
