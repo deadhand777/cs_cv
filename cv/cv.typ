@@ -1,26 +1,13 @@
 // Imports
 #import "@preview/brilliant-cv:4.1.0": cv
 
-#let profile = sys.inputs.at("profile", default: "en")
-#let metadata = toml("profile_" + profile + "/metadata.toml")
-
-#let import-modules(modules) = {
-  for module in modules {
-    include {
-      "profile_" + profile + "/" + module + ".typ"
-    }
-  }
-}
+#let metadata = toml("profile_en/metadata.toml")
 
 #show: cv.with(
   metadata,
   profile-photo: image("assets/avatar.jpeg"),
 )
 
-#import-modules((
-  "professional",
-  "education",
-  "skills",
-  // "projects",
-  "certificates",
-))
+#include "profile_en/professional.typ"
+#include "profile_en/education.typ"
+#include "profile_en/skills.typ"

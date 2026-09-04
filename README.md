@@ -28,5 +28,5 @@ cv/                        # Typst CV pipeline (active)
   cv.typ                   # entry point
   profile_en/              # content: professional.typ, skills.typ, education.typ, metadata.toml
   cv.pdf                   # compiled output
-man/                       # assets (profile photo, preview image)
-Chris_Schulz_CV.yaml       # RenderCV YAML (secondary pipeline)
+man/                       # preview image
+```

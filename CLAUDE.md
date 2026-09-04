@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A personal CV repository for Chris Schulz. The active pipeline is Typst/brilliant-cv (`cv/`). A secondary Python/RenderCV pipeline exists using `Chris_Schulz_CV.yaml`. The legacy R/vitae pipeline has been moved to `local/` (gitignored).
+A personal CV repository for Chris Schulz. The active pipeline is Typst/brilliant-cv (`cv/`). A secondary Python/RenderCV pipeline exists; its `Chris_Schulz_CV.yaml` and the legacy R/vitae pipeline both live in `local/` (gitignored).
 
 ## Generating the CV (Typst/brilliant-cv — active pipeline)
 
@@ -36,7 +36,7 @@ unzip -q /tmp/roboto.zip -d /tmp/roboto && cp /tmp/roboto/Roboto-*.ttf ~/Library
 
 ```bash
 uv sync
-uv run rendercv render Chris_Schulz_CV.yaml
+uv run rendercv render local/Chris_Schulz_CV.yaml
 ```
 
 Output goes to `rendercv_output/`.
@@ -44,20 +44,18 @@ Output goes to `rendercv_output/`.
 ## Architecture
 
 ### Typst pipeline (`cv/`)
-- **`cv/cv.typ`** — entry point; imports `@preview/brilliant-cv:4.0.1`, loads `profile_en/metadata.toml`, includes content modules
+- **`cv/cv.typ`** — entry point; imports `@preview/brilliant-cv:4.1.0`, loads `profile_en/metadata.toml`, includes content modules
 - **`cv/profile_en/metadata.toml`** — personal info, theme, layout spacing (`before_section_skip`, `before_entry_skip`, `before_entry_description_skip` — all `"0pt"` to keep at 2 pages), and ATS `injected_keywords_list` (invisible in PDF)
 - **`cv/profile_en/professional.typ`** — experience entries using `cv-entry`, `cv-entry-start`, `cv-entry-continued` for multi-role companies
 - **`cv/profile_en/skills.typ`** — skill sections using `cv-skill` with `h-bar` separators
 - **`cv/profile_en/education.typ`** — education entries
 - **`cv/assets/avatar.jpeg`** — profile photo
 
-The `projects` and `certificates` modules exist but are commented out in `cv.typ`.
-
 ### RenderCV pipeline
-- **`Chris_Schulz_CV.yaml`** — single source of truth; contains `cv:` (content) and `design:` (layout) sections. Schema pinned to RenderCV v2.6.
+- **`local/Chris_Schulz_CV.yaml`** (gitignored) — contains `cv:` (content) and `design:` (layout) sections. Schema pinned to RenderCV v2.8.
 
 ### CI
-- **`.github/workflows/compile-cv.yml`** — on push to `main`: installs static fonts, compiles `cv/cv.typ` with `typst-community/setup-typst@v3` (^0.14.0), and auto-commits `cv/cv.pdf` if changed.
+- **`.github/workflows/compile-cv.yml`** — on push to `main`: installs static fonts, compiles `cv/cv.typ` with `typst-community/setup-typst@v5` (^0.15.0), and auto-commits `cv/cv.pdf` if changed.
 
 ### Local research wiki
 - **`.wiki/`** — gitignored local wiki (llm-wiki plugin). Tracks research on Head of Data & AI job market. Use `/wiki:research`, `/wiki:query`, `/wiki:output` to interact.
