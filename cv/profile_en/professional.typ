@@ -15,14 +15,14 @@
   title: [Head of Data & AI],
   date: [May 2023 -- Present],
   description: list(
-    [Built and scaled a 6-person AI engineering team from the ground up — establishing engineering standards, sprint cadences, and delivery operating model; structured technical training enabled all 6 engineers to independently operate platform components with 80% more efficient workflows],
-    [Architected and deployed a production-grade AI platform for Intelligent Document Processing (IDP) using Strands Agents SDK and Amazon Bedrock AgentCore — end-to-end model serving, REST API layer, and CI/CD deployment pipelines — reducing after-contact work by 25%],
-    [Designed and standardized an AI agent platform using the Model Context Protocol (MCP), enabling reusable API integrations across internal systems and standardizing agentic workflow orchestration company-wide],
-    [Engineered a scalable distributed datalakehouse (AWS S3, Glue, Lake Formation, Firehose, DuckDB, Iceberg) with automated quality monitoring and full observability — the foundational data platform supporting analytics, ML training, and product data access across the organization],
-    [Established an AI governance framework aligned with EU AI Act — encompassing model documentation, audit trails, explainability pipelines, and continuous bias monitoring for production decisioning systems],
-    [Implemented Claude Code across the engineering team, driving a 40% increase in software development productivity],
-    [Shipped an ISMS and compliance agent (Bedrock AgentCore, Strands Agents, Claude Haiku 4.5, eu-central-1 for EU data residency) answering information security and regulatory questions from the internal ISMS knowledge base with cited sources, using a vectorless manifest-then-fetch retrieval pattern],
-    [Shipped a self-service data analyst agent (AgentCore runtime, Strands Agents, CDK) that turns natural-language questions into governed insights over the internal datalakehouse, removing the analyst bottleneck for business stakeholders],
+    [Built and scaled a 6-person AI engineering team from scratch, setting engineering standards, sprint cadences, and the delivery operating model; structured technical training let all 6 engineers operate platform components independently with 80% more efficient workflows],
+    [Architected and deployed a production-grade AI platform for Intelligent Document Processing (IDP) on Strands Agents SDK and Amazon Bedrock AgentCore (end-to-end model serving, REST API layer, CI/CD deployment pipelines) that cut after-contact work by 25%],
+    [Designed and standardized an AI agent platform on the Model Context Protocol (MCP), which gave internal systems reusable API integrations and the company one way to orchestrate agentic workflows],
+    [Engineered a scalable distributed datalakehouse (AWS S3, Glue, Lake Formation, Firehose, DuckDB, Iceberg) with automated quality monitoring and full observability; analytics, ML training, and product data access across the organization all run on it],
+    [Established an AI governance framework for the EU AI Act: model documentation, audit trails, explainability pipelines, and continuous bias monitoring for production decisioning systems],
+    [Rolled out Claude Code across the engineering team, which lifted software development productivity by 40%],
+    [Shipped an ISMS and compliance agent (Bedrock AgentCore, Strands Agents, Claude Haiku 4.5, eu-central-1 for EU data residency) that answers information security and regulatory questions from the internal ISMS knowledge base with cited sources, on a vectorless manifest-then-fetch retrieval pattern],
+    [Shipped a self-service data analyst agent (AgentCore runtime, Strands Agents, CDK) that turns natural-language questions into governed insights over the internal datalakehouse, which ended the analyst bottleneck for business stakeholders],
   ),
   tags: ("Amazon Bedrock", "AWS", "Claude", "Datalakehouse", "EU AI Act", "GenAI", "LLM", "MCP", "Model Governance", "Python", "Strands Agents", "TypeScript", "AI Chatbot", "Information Security", "Compliance", "Regulatory AI", "NLP", "LLM Applications", "Data Analytics", "Business Intelligence"),
 )
@@ -33,8 +33,8 @@
   date: [Dec 2022 -- May 2023],
   location: [Berlin, Germany],
   description: list(
-    [Developed a data strategy and roadmap for a client's customer service department, identifying key business requirements and aligning data capabilities to operational goals],
-    [Designed a cloud-based end-to-end data management framework covering ingestion, transformation, and consumption layers for scalable data democratization],
+    [Developed a data strategy and roadmap for a client's customer service department: named the main business requirements and matched data capabilities to their operational goals],
+    [Designed a cloud-based data management framework that spans the ingestion, transformation, and consumption layers for scalable data democratization],
   ),
   tags: ("Cloud Architecture", "Consulting", "Data Strategy", "Python", "Business Intelligence"),
 )
@@ -45,8 +45,8 @@
   date: [Jul 2022 -- Nov 2022],
   location: [Berlin, Germany],
   description: list(
-    [Led and mentored a team of data scientists at one of Germany's largest digital retail banks, establishing standardized model development workflows, code review standards, and a regulated-deployment checklist for production ML systems in a banking environment],
-    [Developed the data science strategy and product roadmap for DKB's core banking AI initiatives, aligning ML capability with BaFin-regulated risk and compliance constraints],
+    [Led and mentored a team of data scientists at one of Germany's largest digital retail banks; set standardized model development workflows, code review standards, and a regulated-deployment checklist for production ML systems in banking],
+    [Developed the data science strategy and product roadmap for DKB's core banking AI initiatives within BaFin-regulated risk and compliance constraints],
   ),
   tags: ("BaFin", "Banking", "Data Science Strategy", "Data Science Workflow", "Python", "R", "Regulated ML", "Team Leadership", "Business Intelligence"),
 )
@@ -60,9 +60,9 @@
   title: [Data Scientist | Team Lead Central Data Team],
   date: [Jan 2021 -- Jul 2022],
   description: list(
-    [Led Europace's data strategy transformation, driving company-wide adoption of data-informed decision-making across all business units],
-    [Architected and extended a central data lake with a modular service landscape, enabling self-serve analytics across all Europace stakeholder groups],
-    [Developed and deployed ML-based anomaly detection and time series forecasting pipelines, automating data validation and enabling forward-looking capacity planning for executive reporting],
+    [Led Europace's data strategy transformation and brought data-informed decision-making into every business unit],
+    [Architected and extended a central data lake with modular services, which gave every Europace stakeholder group self-serve analytics],
+    [Developed and deployed ML-based anomaly detection and time series forecasting pipelines that automate data validation and feed forward-looking capacity planning into executive reporting],
   ),
   tags: ("Anomaly Detection", "AWS", "Datalake", "ML", "Python", "Team Leadership", "Time Series", "TypeScript", "Business Intelligence"),
 )
@@ -71,7 +71,7 @@
   title: [Data Scientist | Product Owner Central Data Team],
   date: [Jun 2020 -- Jan 2021],
   description: list(
-    [Designed the cloud-based data framework (ingestion → transformation → consumption) for the loans business and built KPI dashboards across teams, establishing the foundation for data-driven decision-making at Europace],
+    [Designed the cloud-based data framework (ingestion → transformation → consumption) for the loans business and built KPI dashboards across teams, which started data-driven decision-making at Europace],
   ),
   tags: ("AWS", "Datalake", "ETL", "KPI Design", "ML", "Product Deployment", "Python", "TypeScript", "Business Intelligence"),
 )
@@ -80,7 +80,7 @@
   title: [Data Analyst Loans Business],
   date: [Aug 2016 -- Jun 2020],
   description: list(
-    [Advised partner institutions on technology innovation and data capability; led the Europace data-drivenness initiative enabling data-informed decision-making across the lending ecosystem],
+    [Advised partner institutions on technology innovation and data capability; led the Europace data-drivenness initiative that brought data-informed decision-making to the lending ecosystem],
   ),
   tags: ("AWS", "Business Analytics", "Data Analysis", "ML", "Python", "R", "Business Intelligence"),
 )
@@ -117,8 +117,8 @@
   date: [Dec 2013 -- Mar 2014],
   location: [Zurich, Switzerland],
   description: list(
-    [Supported control and budgeting of the full project lifecycle from construction to commissioning of EMEA power plants, ensuring budget compliance across 4 projects],
-    [Created and presented financial forecasts, construction reviews, cost calculation executions, and information database updates, ensuring clarity of information across stakeholders],
+    [Supported control and budgeting of the full project lifecycle from construction to commissioning of EMEA power plants, holding 4 projects to budget],
+    [Created and presented financial forecasts, construction reviews, cost calculations, and information database updates that kept stakeholders clear on the numbers],
   ),
   tags: ("Budgeting", "Controlling", "Financial Forecasting", "Project Management"),
 )
