@@ -21,8 +21,8 @@
     [Engineered a scalable distributed datalakehouse (AWS S3, Glue, Lake Formation, Firehose, DuckDB, Iceberg) with automated quality monitoring and full observability — the foundational data platform supporting analytics, ML training, and product data access across the organization],
     [Established an AI governance framework aligned with EU AI Act — encompassing model documentation, audit trails, explainability pipelines, and continuous bias monitoring for production decisioning systems],
     [Implemented Claude Code across the engineering team, driving a 40% increase in software development productivity],
-    [Developed and implemented an AI-powered chatbot to assist stakeholders with information security and compliance inquiries, leveraging internal knowledge bases and regulatory guidelines to provide accurate, timely guidance],
-    [Developed and deployed an AI-powered data analytics assistant that provides expert-level data insights to business stakeholders, eliminating the data analyst bottleneck and enabling self-service analytics across the organization],
+    [Shipped an ISMS and compliance agent (Bedrock AgentCore, Strands Agents, Claude Haiku 4.5, eu-central-1 for EU data residency) answering information security and regulatory questions from the internal ISMS knowledge base with cited sources, using a vectorless manifest-then-fetch retrieval pattern],
+    [Shipped a self-service data analyst agent (AgentCore runtime, Strands Agents, CDK) that turns natural-language questions into governed insights over the internal datalakehouse, removing the analyst bottleneck for business stakeholders],
   ),
   tags: ("Amazon Bedrock", "AWS", "Claude", "Datalakehouse", "EU AI Act", "GenAI", "LLM", "MCP", "Model Governance", "Python", "Strands Agents", "TypeScript", "AI Chatbot", "Information Security", "Compliance", "Regulatory AI", "NLP", "LLM Applications", "Data Analytics", "Business Intelligence"),
 )

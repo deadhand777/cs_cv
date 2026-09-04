@@ -5,6 +5,42 @@
 #cv-section("Key Projects")
 
 #cv-entry(
+  title: [ISMS & Compliance Agent],
+  society: [Dr Klein Ratenkredit GmbH],
+  date: [2026 -- Present],
+  location: [Production],
+  description: list(
+    [Containerised agent on Amazon Bedrock AgentCore with Strands Agents and Claude Haiku 4.5 (cross-region inference in eu-central-1 for EU data residency), answering information security and regulatory questions with cited sources],
+    [Vectorless manifest-then-fetch retrieval over the central ISMS knowledge base — no embedding pipeline to maintain — plus AgentCore Memory for session continuity, deployed as a single CDK stack],
+  ),
+  tags: ("AWS", "Bedrock", "AgentCore", "Strands Agents", "Claude Haiku 4.5", "ISMS", "Compliance", "CDK"),
+)
+
+#cv-entry(
+  title: [Data Analyst AI Agent],
+  society: [Dr Klein Ratenkredit GmbH],
+  date: [2026 -- Present],
+  location: [Production],
+  description: list(
+    [Autonomous analyst agent on Bedrock AgentCore (Strands Agents, Python 3.13, CDK) turning plain-language questions into data-grounded insights over the internal DataHub data universe],
+    [Dashboard frontend for self-service access, removing the analyst bottleneck so teams decide on data instead of waiting for scarce analysis capacity],
+  ),
+  tags: ("AWS", "Bedrock", "AgentCore", "Strands Agents", "Data Analytics", "Self-Service BI", "DataHub", "CDK"),
+)
+
+#cv-entry(
+  title: [Agentic Contact Center],
+  society: [Open Source],
+  date: [2026],
+  location: [Proof of Concept],
+  description: list(
+    [Supervisor agent on Bedrock AgentCore (Nova 2 Lite, Strands Agents) behind Amazon Connect chat, serving cited product answers from an S3 Vectors knowledge base, authenticated balance lookups via an MCP gateway, and deterministic escalation to a human queue],
+    [Built for regulated German banking (BaFin/DORA, eu-central-1): server-side identity binding, Bedrock Guardrail for PII anonymisation and investment-advice denial, and a deterministic eval harness scoring 14/14 on a golden question set],
+  ),
+  tags: ("AWS", "Bedrock", "AgentCore", "Amazon Connect", "Lex V2", "S3 Vectors", "Guardrails", "MCP", "CDK"),
+)
+
+#cv-entry(
   title: [Intelligent Document Processing Platform],
   society: [Dr Klein Ratenkredit GmbH],
   date: [2023 -- Present],
