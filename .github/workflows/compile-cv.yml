@@ -12,7 +12,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install fonts
         run: |
@@ -28,14 +28,14 @@ jobs:
           cp /tmp/fontawesome/fontawesome-free-7.3.1-desktop/otfs/*.otf ~/.local/share/fonts/
           fc-cache -f
 
-      - uses: typst-community/setup-typst@v3
+      - uses: typst-community/setup-typst@v5
         with:
-          typst-version: ^0.14.0
+          typst-version: ^0.15.0
 
       - name: Compile CV
         run: cd cv && typst compile cv.typ
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "ci: recompile cv.pdf"
           file_pattern: cv/cv.pdf

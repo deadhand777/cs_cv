@@ -1,7 +1,7 @@
 // This section is intentionally left empty — add certificates as needed.
 // Uncomment and customize the entries below:
 //
-// #import "@preview/brilliant-cv:4.0.1": cv-honor, cv-section
+// #import "@preview/brilliant-cv:4.1.0": cv-honor, cv-section
 //
 // #cv-section("Certificates & Awards")
 //
