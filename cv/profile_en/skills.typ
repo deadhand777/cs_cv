@@ -24,7 +24,7 @@
   info: [
     Languages (Python, R, SQL, TypeScript)
     #h-bar() Classical ML (Regression, Classification, Clustering, XGBoost, LightGBM, Scikit-learn)
-    #h-bar() Deep Learning (PyTorch, TensorFlow, Neural Networks, Transformers)
+    #h-bar() Deep Learning (Neural Networks, Transformers)
     #h-bar() Time Series (Forecasting, Classification, Anomaly Detection, Nixtla)
     #h-bar() Data Visualization (Plotly, Streamlit, Shiny)
   ],
