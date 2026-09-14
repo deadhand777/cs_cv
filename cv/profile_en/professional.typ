@@ -28,12 +28,12 @@
 )
 
 #cv-entry(
-  title: [Data Scientist Consultant],
+  title: [Contractor Data Scientist Consultant],
   society: [Allgeier IT GmbH],
   date: [Dec 2022 -- May 2023],
   location: [Berlin, Germany],
   description: list(
-    [Wrote the data strategy and roadmap for a client's customer service department: collected the main business requirements and matched data capabilities to their operational goals],
+    [Defined the data strategy and roadmap for a client's customer service department: collected the main business requirements and matched data capabilities to their operational goals],
     [Designed a cloud data management framework covering the ingestion, transformation, and consumption layers, so teams across the client could serve themselves],
   ),
   tags: ("Cloud Architecture", "Consulting", "Data Strategy", "Python", "Business Intelligence"),
